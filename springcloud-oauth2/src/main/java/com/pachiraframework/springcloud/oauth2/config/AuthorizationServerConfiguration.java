@@ -41,7 +41,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 				.withClient("client") // client_id
 				.secret("secret") // client_secret
 				.autoApprove(true)
-				.authorizedGrantTypes("authorization_code") // 该client允许的授权类型
+				.authorizedGrantTypes("authorization_code","refresh_token") // 该client允许的授权类型
 				.scopes("app"); // 允许的授权范围
 	}
 
